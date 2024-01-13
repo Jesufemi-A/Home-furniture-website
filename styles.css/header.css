@@ -13,16 +13,26 @@ body {
   font-family: Inter, Arial;
   font-size: 1.6rem;
   box-sizing: border-box;
-  position: relative
+  position: relative;
 }
-
-
 
 .nav {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
-  
+}
+
+.sticky {
+  position: fixed;
+  padding-bottom: 25px;
+  padding-left: 20px !important;
+  padding-right: 20px;
+  background-color: rgb(255, 243, 243);
+  opacity: 0.85;
+  margin-bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(5px)
 }
 
 .header-img {
@@ -33,10 +43,16 @@ body {
   display: flex;
   align-items: center;
   width: 20rem;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.left-section:hover {
+  transform: scale(1.08);
 }
 
 .shopify-logo {
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .shopify-text {
@@ -56,6 +72,23 @@ body {
   color: rgb(80, 80, 80);
   font-weight: 500;
   margin-left: -100px;
+}
+
+.home,
+.product,
+.about,
+.categories {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.home:hover,
+.product:hover,
+.about:hover,
+.categories:hover {
+  background-color: rgb(243, 123, 94);
 }
 
 /* .middle-sec-con {
@@ -79,7 +112,11 @@ header {
   background-color: rgb(255, 243, 243);
   padding-left: 20px;
   padding-right: 20px;
-  
+  padding-bottom: 20px;
+}
+
+.div-unknown {
+  padding-top: 50px;
 }
 
 .furniture {
@@ -98,17 +135,15 @@ header {
 }
 
 .choose-text {
-  width: 46rem;
+  max-width: 32rem;
 }
-
 
 .shop-watch-video {
   margin-top: 4rem;
   display: flex;
   align-items: center;
-  
+  margin-bottom: 4rem;
 }
-
 
 .shop-now {
   /* border-style: solid; */
@@ -128,7 +163,7 @@ header {
 }
 
 .watch-video {
-  background-color:none;
+  background-color: none;
   border: none;
 }
 
@@ -147,25 +182,23 @@ header {
   display: inline-block;
   width: 100%;
   cursor: pointer;
-
 }
 
 .shop-text {
   font-size: 2rem;
-  
 }
 
-.menu-icon  {
+.menu-icon {
   display: none;
 }
 
-
-.light-img-con, .chair-img-con {
+.light-img-con,
+.chair-img-con {
   position: absolute;
 }
 
 .light-img-con {
-  top: 9.8rem;
+  top: 20.7rem;
   right: 5rem;
   z-index: 3;
   height: 15rem;
@@ -177,23 +210,31 @@ header {
 
 .chair-img-con {
   height: 30rem;
-  top: 14rem;
+  top: 25rem;
   right: 2rem;
-  box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5)
-  
+  /* box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5) */
 }
 
 .chair {
   height: 100%;
 }
 
+.col {
+  width: 100%;
+}
 
-
+.colors {
+  position: absolute;
+  width: 6rem;
+  right: 2.5rem;
+  top: 44.5rem;
+}
 
 /* mobile */
 
 @media screen and (max-width: 780px) {
-  .middle-section, .right-section {
+  .middle-section,
+  .right-section {
     display: none;
   }
 
@@ -201,4 +242,195 @@ header {
     display: inline-block;
     cursor: pointer;
   }
+}
+
+/* pc */
+
+.company-logo-con {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.com-logo-con {
+  width: 10rem;
+}
+.com-logo-con img {
+  width: 100%;
+}
+
+.chair-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-small-chairs {
+  width: 4rem;
+}
+
+.left-small-chairs img {
+  width: 100%;
+}
+
+.mid-chair-sec {
+  height: 14rem;
+}
+
+.mid-chair-sec img {
+  height: 100%;
+}
+
+.stool-sec {
+  height: 12rem;
+}
+
+.stool-sec img {
+  height: 100%;
+}
+
+/* sofa-section */
+
+.sofa-section {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-sec-text {
+  max-width: 40rem;
+}
+
+.sofa-heading {
+  margin-bottom: 1.7rem;
+}
+
+.sofa-text {
+  color: rgb(80, 80, 80);
+  margin-bottom: 2.3rem;
+}
+
+.learn-more {
+  text-decoration: none;
+  background-color: rgb(243, 123, 94);
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 2px 0 10px rgb(243, 123, 94);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: rgb(248, 81, 39);
+}
+/* mobile */
+
+/* @media screen  and (max-width: 870px) {
+  
+  .chair-con {
+    display: block;
+  }
+
+    .right-sec-text {
+      display: block;
+    } 
+     .sofa-section {
+     
+    } 
+
+
+   
+} */
+
+.white {
+  background-color: white;
+  margin-bottom: 7rem;
+}
+
+.feature-section {
+  color: rgb(22, 22, 22);
+  margin-right: 10rem;
+}
+
+.feature {
+  padding-bottom: 3rem;
+  color: rgb(22, 22, 22);
+}
+
+.feature-paragraph {
+  color: rgb(80, 80, 80);
+}
+
+ul {
+  list-style: none;
+  max-width: 30rem;
+}
+
+.feature-span {
+  color: rgb(194, 192, 192);
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.list-pad {
+  padding-bottom: 5rem;
+}
+li h4 {
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+}
+
+.rect-bottom-con {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.rect-188-con,
+.rect-187-con {
+  max-width: 30rem;
+  /* padding-right: 3rem;
+  padding-left: 3rem; */
+}
+
+.rect-188-con {
+  padding-left: 0.5rem;
+}
+.rect-187-con {
+  padding-left: 1rem;
+}
+
+.rect-187-con {
+  padding-right: 0.5rem;
+}
+
+/* .rect-188,
+.rect-187 {
+  transform: translateX(50%);
+} */
+
+.rect-188,
+.rect-187 {
+  width: 100%;
+}
+
+.rect-185 {
+  width: 100%;
+}
+
+.rect-185-con {
+  max-width: 63rem;
+  padding-bottom: 2rem;
+}
+
+.grey-section {
+  display: flex;
+  background-color: rgba(243, 246, 255, 1);
+  padding: 4rem;
+  justify-content: space-evenly;
+  align-items: center;
 }
