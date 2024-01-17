@@ -433,13 +433,16 @@ li h4 {
   padding-bottom: 2rem;
 }
 
+.section {
+  transition: all 1s;
+}
 .grey-section {
   display: flex;
   background-color: rgba(243, 246, 255, 1);
   padding: 4rem;
   justify-content: space-evenly;
   align-items: center;
-  transition: all 1s;
+
 }
 
 .services-section {
@@ -523,7 +526,13 @@ li h4 {
 }
 .chair-products {
   margin-top: 40px;
-  padding: 1rem;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  max-width: 120rem;
+  margin: 3rem auto;
   /* color: ; */
 }
 .chair-product {
@@ -532,7 +541,9 @@ li h4 {
   background-color: rgb(249, 250, 254);
   border-radius: 10px;
   /* text-align: center; */
-  padding: 10px;
+  padding: 0 12px 20px 12px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .product-img-con {
@@ -590,5 +601,19 @@ li h4 {
 .color-money {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 13px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .chair-products {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .chair-products {
+    grid-template-columns: 1fr 1fr;
+  }
 }
