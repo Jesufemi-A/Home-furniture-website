@@ -27,12 +27,12 @@ body {
   padding-bottom: 25px;
   padding-left: 20px !important;
   padding-right: 20px;
-  background-color: rgb(255, 243, 243);
+  background-color: rgb(252, 218, 218);
   opacity: 0.85;
   margin-bottom: 0;
   left: 0;
   right: 0;
-  transform: translateX(5px)
+ 
 }
 
 .header-img {
@@ -96,6 +96,16 @@ body {
   justify-content: space-between;
   align-items: center;
 } */
+
+
+
+
+/* Revealing element on the scroll */
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
 
 .right-section {
   width: 100px;
@@ -433,4 +443,5 @@ li h4 {
   padding: 4rem;
   justify-content: space-evenly;
   align-items: center;
+  transition: all 1s;
 }
