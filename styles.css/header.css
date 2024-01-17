@@ -32,7 +32,6 @@ body {
   margin-bottom: 0;
   left: 0;
   right: 0;
- 
 }
 
 .header-img {
@@ -96,9 +95,6 @@ body {
   justify-content: space-between;
   align-items: center;
 } */
-
-
-
 
 /* Revealing element on the scroll */
 
@@ -444,4 +440,103 @@ li h4 {
   justify-content: space-evenly;
   align-items: center;
   transition: all 1s;
+}
+
+.services-section {
+  background-color: white;
+  padding: 5rem 5rem 0 5rem;
+  margin-bottom: 10rem;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.services-paragraph {
+  margin-bottom: 12px;
+}
+
+.services-flex-con {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services-info {
+  max-width: 45rem;
+}
+.services-img-con {
+  max-width: 40rem;
+  margin-right: 3rem;
+}
+
+.services-img-con img {
+  width: 100%;
+}
+
+.services-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-left {
+  margin-right: 2rem;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.service-items span {
+  color: rgb(122, 122, 122);
+  margin-left: 10px;
+}
+
+.adjust {
+  width: 2rem;
+}
+
+.popular-product {
+  margin: auto;
+  margin-top: 10rem;
+  max-width: 45rem;
+  text-align: center;
+  margin-bottom: 5rem;;
+}
+
+.popular-product p {
+  color: rgb(122, 122, 122);
+}
+
+.product-nav {
+  /* width: 45rem; */
+  margin: auto;
+  text-align: center;
+
+}
+
+.product-nav span {
+  margin-right: 4px;
+  border: grey solid 1px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+ 
+
+}
+.chair-products {
+  margin-top: 40px;
+}
+.chair-product {
+  border: grey solid 1px;
+  width: 40rem
+}
+
+
+.product-img-con {
+width: 30rem;
+}
+
+.product-img {
+  width: 100%;
 }
